@@ -1,0 +1,26 @@
+{
+  "name": "vue-common-filters",
+  "version": "1.0.0",
+  "description": "Collection of common filters used in projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "filters",
+    "collection",
+    "date",
+    "time",
+    "currency",
+    "filter",
+    "vue",
+    "plugin",
+    "plugin"
+  ],
+  "author": "Zhoray Gevorgyan",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
