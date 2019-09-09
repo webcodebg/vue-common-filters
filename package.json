@@ -18,9 +18,20 @@
     "plugin",
     "plugin"
   ],
-  "author": "Zhoray Gevorgyan",
+  "author": {
+      "name": "epicbg",
+      "email": "studio@epicweb.bg"
+  },
+  "homepage": "https://github.com/epicbg/vue-common-filters",
+  "bugs": {
+    "url": "https://github.com/epicbg/vue-common-filters/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "moment": "^2.24.0"
-  }
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/epicbg/vue-common-filters.git"
+  }  
 }
