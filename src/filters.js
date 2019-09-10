@@ -1,6 +1,6 @@
 import { fromNow, format } from './filters/datetime'
-import { search } from './filters/array'
-import { truncate, att, aott } from './filters/text'
+import { search, att, aott  } from './filters/array'
+import { truncate} from './filters/text'
 
 export default {
     // Date and time filters

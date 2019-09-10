@@ -1,9 +1,9 @@
-import filters from 'src/filters'
+import filters from './src/filters'
 
 export default {
     install(vue) {
         // Register filters globally
-        for(filters in filters){
+        for(let filter in filters){
             vue.filter(filter, filters[filter]);
         }
     }

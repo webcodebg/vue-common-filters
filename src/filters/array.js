@@ -1,4 +1,4 @@
-export default search = (v, str) => {
+export function search(v, str) {
     let result = v.filter(obj => {
         
         let values_including_string = Object.values(obj).filter(val => {
@@ -11,14 +11,14 @@ export default search = (v, str) => {
     return result 
 }
 
-export default att = (v, delimiter) => {
+export function att(v, delimiter) {
     let result = ''
 
-    for (const str in arr) {
-        if(str == arr.length - 1){
-            result += arr[str]
+    for (const str in v) {
+        if(str == v.length - 1){
+            result += v[str]
         } else {
-            result += arr[str] + delimiter 
+            result += v[str] + delimiter 
         }
             
     }
@@ -26,14 +26,14 @@ export default att = (v, delimiter) => {
     return result
 }
 
-export default aott = (v, key, delimiter) => {
+export function aott(v, key, delimiter) {
     let result = ''
-    for (const i in obj) {
-        if(obj[i][key]){
-            if(i == obj.length - 1)
-                result += obj[i][key] 
+    for (const i in v) {
+        if(v[i][key]){
+            if(i == v.length - 1)
+                result += v[i][key] 
             else
-                result += obj[i][key] + delimiter
+                result += v[i][key] + delimiter
         }
     }
     return result

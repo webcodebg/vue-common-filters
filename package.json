@@ -1,6 +1,6 @@
 {
   "name": "vue-common-filters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Collection of common filters used in projects",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   ],
   "author": {
       "name": "epicbg",
-      "email": "studio@epicweb.bg"
+      "email": "zhoraygevorgyan@epicweb.bg"
   },
   "homepage": "https://github.com/epicbg/vue-common-filters",
   "bugs": {
