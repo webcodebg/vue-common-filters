@@ -11,7 +11,7 @@ export function search(v, str) {
     return result 
 }
 
-export function att(v, delimiter) {
+export function ats(v, delimiter) {
     let result = ''
 
     for (const str in v) {
@@ -26,7 +26,7 @@ export function att(v, delimiter) {
     return result
 }
 
-export function aott(v, key, delimiter) {
+export function aots(v, key, delimiter) {
     let result = ''
     for (const i in v) {
         if(v[i][key]){
