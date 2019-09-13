@@ -1,6 +1,6 @@
 {
   "name": "vue-common-filters",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Collection of common filters used in projects",
   "main": "index.js",
   "scripts": {

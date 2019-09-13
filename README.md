@@ -9,6 +9,14 @@ Install via npm
 Download repo
 `git clone https://github.com/epicbg/vue-common-filters.git`
 
+
+```javascript
+import Vue from 'vue'
+import VueCommonFilters from 'vue-common-filters'
+
+Vue.use(VueCommonFilters)
+```
+
 # Filters and usage
 
 ### truncate
