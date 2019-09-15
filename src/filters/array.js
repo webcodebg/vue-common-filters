@@ -11,7 +11,10 @@ export function search(v, str) {
     return result 
 }
 
-export function ats(v, delimiter) {
+export function ats(v, delimiter = null) {
+    
+    delimiter = delimiter || window.__vcf_settings.dates.implodeDelimiter
+    
     let result = ''
 
     for (const str in v) {
@@ -26,7 +29,8 @@ export function ats(v, delimiter) {
     return result
 }
 
-export function aots(v, key, delimiter) {
+export function aots(v, key, delimiter = null) {
+    delimiter = delimiter || window.__vcf_settings.dates.implodeDelimiter
     let result = ''
     for (const i in v) {
         if(v[i][key]){

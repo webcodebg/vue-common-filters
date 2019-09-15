@@ -10,7 +10,16 @@
         "truncateClamp": "..."
     },
 
+    "numbers": {
+        "decimalDigits": 2
+    },
+
+    "array": {
+        "implodeDelimiter": ", "
+    },
+
     "dates": {
-        "format": "YYYY-MM-DD HH:mm:ss"
+        "defaultFormat": "YYYY-MM-DD HH:mm:ss",
+        "filterConvertFormat": "DD MMMM YYYY"
     }
 }

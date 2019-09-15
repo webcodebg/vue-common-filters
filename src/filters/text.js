@@ -17,3 +17,7 @@ export const uppercase = (v) => {
 export const lowercase = (v) => {
     return v.toLowerCase();
 }
+
+export const placeholder = (v, p) => {
+    return v || p
+}

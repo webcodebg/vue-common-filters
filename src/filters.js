@@ -1,9 +1,10 @@
 import { fromNow, format, to, from, add, substract } from './filters/datetime'
 import { search, ats, aots } from './filters/array'
-import { truncate, trim, capitalize, uppercase, lowercase} from './filters/text'
+import { truncate, trim, capitalize, uppercase, lowercase, placeholder} from './filters/text'
 import { currency, decimal } from './filters/numbers'
 
 export default {
+
     // Date and time filters
     "formatDate": format,
     "fromNow": fromNow,
@@ -14,8 +15,8 @@ export default {
 
     // Array filters
     "search": search,
-    "ats": ats,
-    "aots": aots,
+    "implode": ats,
+    "implodeObject": aots,
 
     // Numbers
     "currency": currency,
@@ -26,6 +27,7 @@ export default {
     "trim": trim,
     "capitalize": capitalize,
     "uppercase": uppercase,
-    "lowercast": lowercase
+    "lowercast": lowercase,
+    "placeholder": placeholder
 
 }

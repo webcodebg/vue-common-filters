@@ -19,6 +19,6 @@ export const currency = (v, symbol = null, decimalDigits = null, symbolOnLeft = 
 }
 
 export const decimal = (v, digits = null) => {
-    let length = digits || window.__vcf_settings.numbers.decimalDigits
+    let length = digits || window.__vcf_settings.numbers.formatDecimalDigits
     return Number(v).toFixed(length)
 }

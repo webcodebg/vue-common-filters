@@ -3,7 +3,7 @@ import config from './config.json'
 import {merge} from './src/helpers/helper.js'
 
 export default {
-    install(vue, settings) {
+    install(vue, settings = {}) {
 
         // overwrite config props to settings props
         window.__vcf_settings = merge(config, settings)

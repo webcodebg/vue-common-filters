@@ -1,27 +1,28 @@
 import moment from 'moment'
 
 export const format = (v, format) => {
-    moment(v, window.__vcf_settings.dates.format).format(format)
+    let f = format || window.__vcf_settings.dates.filterConvertFormat 
+    return moment(v, window.__vcf_settings.dates.defaultFormat).format(f)
 }
 
 export const fromNow = (v) => {
-    moment(v, window.__vcf_settings.dates.format).fromNow()
-}
+    return moment(v, window.__vcf_settings.dates.defaultFormat).fromNow()
+} 
 
 
 export const from = (v, from) => {
-    moment(v, window.__vcf_settings.dates.format).from(from)
+    return moment(v, window.__vcf_settings.dates.defaultFormat).from(from)
 }
 
 export const to = (v, to) => {
-    moment(v, window.__vcf_settings.dates.format).to(to)
+    return moment(v, window.__vcf_settings.dates.defaultFormat).to(to)
 }
 
 
 export const add = (v, number, type) => {
-    moment(v, window.__vcf_settings.dates.format).add(number, type)
+    return moment(v, window.__vcf_settings.dates.defaultFormat).add(number, type)
 }
 
 export const substract = (v, number, type) => {
-    moment(v, window.__vcf_settings.dates.format).substract(number, type)
+    return moment(v, window.__vcf_settings.dates.defaultFormat).substract(number, type)
 }
