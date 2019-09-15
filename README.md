@@ -14,10 +14,25 @@ Download repo
 import Vue from 'vue'
 import VueCommonFilters from 'vue-common-filters'
 
-Vue.use(VueCommonFilters)
+Vue.use(VueCommonFilters, {
+    "currency": {
+        "symbol": "$",
+        "decimalDigits": 2,
+        "symbolOnLeft": true,
+        "spaceBetweenAmountAndSymbol": false
+    },
+
+    "text": {
+        "truncateClamp": "..."
+    },
+    
+    "dates": {
+        "format": "YYYY-MM-DD HH:mm:ss"
+    }
+})
 ```
 
-# Filters and usage
+# Useage
 
 ### truncate
 Set string max length

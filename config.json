@@ -1,0 +1,16 @@
+{
+    "currency": {
+        "symbol": "$",
+        "decimalDigits": 2,
+        "symbolOnLeft": true,
+        "spaceBetweenAmountAndSymbol": false
+    },
+
+    "text": {
+        "truncateClamp": "..."
+    },
+
+    "dates": {
+        "format": "YYYY-MM-DD HH:mm:ss"
+    }
+}
