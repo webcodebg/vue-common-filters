@@ -23,6 +23,6 @@ export const add = (v, number, type) => {
     return moment(v, window.__vcf_settings.dates.defaultFormat).add(number, type)
 }
 
-export const substract = (v, number, type) => {
-    return moment(v, window.__vcf_settings.dates.defaultFormat).substract(number, type)
+export const subtract = (v, number, type) => {
+    return moment(v, window.__vcf_settings.dates.defaultFormat).subtract(number, type)
 }

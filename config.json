@@ -3,7 +3,7 @@
         "symbol": "$",
         "decimalDigits": 2,
         "symbolOnLeft": true,
-        "spaceBetweenAmountAndSymbol": false
+        "spaceBetweenAmountAndSymbol": true
     },
 
     "text": {

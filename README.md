@@ -125,8 +125,8 @@ Arguments:
 Example:
 
 ```javascript
-{{ users | implode('name') }} // [{id: 1, name:'Danny'}, {id: 2, name:'Bobby'}] => Danny, Bobby
-{{ users | implode('name', ' and ') }} // [{id: 1, name:'Danny'}, {id: 2, name:'Bobby'}] => Danny and Bobby
+{{ users | implodeObjects('name') }} // [{id: 1, name:'Danny'}, {id: 2, name:'Bobby'}] => Danny, Bobby
+{{ users | implodeObjects('name', ' and ') }} // [{id: 1, name:'Danny'}, {id: 2, name:'Bobby'}] => Danny and Bobby
 ```
 
 ### search
@@ -154,7 +154,7 @@ This packages uses moment and if you want to change the locale you can do it lik
 moment.locale('en')
 ```
 
-### format
+### formatDate
 
 Arguments:
 
@@ -163,8 +163,8 @@ Arguments:
 Example:
 
 ```javascript
-{{ date | format('DD MMMM') }} // '2018-02-01' => '1 February'
-{{ date | format }} // '2018-02-01' => '1 February 2019'
+{{ date | formatDate('DD MMMM') }} // '2018-02-01' => '1 February'
+{{ date | formatDate }} // '2018-02-01' => '1 February 2019'
 ```
 
 ### fromNow
@@ -197,7 +197,7 @@ Example:
 {{ date | to('2019-07-01') }} // '2019-06-01' => 'in 1 month'
 ```
 
-### add / substract
+### add / subtract
 
 Arguments:
 
@@ -208,7 +208,7 @@ Example:
 
 ```javascript
 {{ date | add(2, 'days') }} // '2019-06-01' => '2019-06-03'
-{{ date | substract(2, 'days') }} // '2019-06-03' => '2019-06-01'
+{{ date | subtract(2, 'days') }} // '2019-06-03' => '2019-06-01'
 ```
 
 ## Number filters
