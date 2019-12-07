@@ -272,5 +272,5 @@ vueCommonFilters.config = {
 # License
 MIT License
 
-Copyright (c) 2019 EpicWeb
+Copyright (c) 2019 webcode.bg
 
